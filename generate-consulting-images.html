@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Consulting Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+        .image-container {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+        .placeholder-image {
+            width: 400px;
+            height: 300px;
+            background: linear-gradient(135deg, #2c5530, #4a7c59);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin-bottom: 10px;
+        }
+        .image-label {
+            font-weight: bold;
+            color: #333;
+        }
+        .download-btn {
+            background: #2c5530;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .download-btn:hover {
+            background: #4a7c59;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lumber River Native Plants - Consulting Images</h1>
+    <p>Right-click on each image and "Save image as..." to download</p>
+
+    <div class="image-container">
+        <div class="placeholder-image" id="jep-consulting">
+            Jep Whitlock<br>Native Plant Consulting<br>Expert Local Knowledge
+        </div>
+        <div class="image-label">jep-consulting.jpg</div>
+        <button class="download-btn" onclick="downloadImage('jep-consulting', 'jep-consulting.jpg')">Download</button>
+    </div>
+
+    <div class="image-container">
+        <div class="placeholder-image" id="revenue-chart">
+            Consulting Revenue<br>Projections<br>$14,350/month potential
+        </div>
+        <div class="image-label">revenue-chart.jpg</div>
+        <button class="download-btn" onclick="downloadImage('revenue-chart', 'revenue-chart.jpg')">Download</button>
+    </div>
+
+    <div class="image-container">
+        <div class="placeholder-image" id="landscape-design">
+            Native Landscape<br>Design Consulting<br>Transform Your Property
+        </div>
+        <div class="image-label">landscape-design.jpg</div>
+        <button class="download-btn" onclick="downloadImage('landscape-design', 'landscape-design.jpg')">Download</button>
+    </div>
+
+    <div class="image-container">
+        <div class="placeholder-image" id="ecological-restoration">
+            Ecological<br>Restoration<br>Habitat Enhancement
+        </div>
+        <div class="image-label">ecological-restoration.jpg</div>
+        <button class="download-btn" onclick="downloadImage('ecological-restoration', 'ecological-restoration.jpg')">Download</button>
+    </div>
+
+    <div class="image-container">
+        <div class="placeholder-image" id="plant-health">
+            Plant Health<br>Diagnosis & Care<br>Expert Solutions
+        </div>
+        <div class="image-label">plant-health.jpg</div>
+        <button class="download-btn" onclick="downloadImage('plant-health', 'plant-health.jpg')">Download</button>
+    </div>
+
+    <div class="image-container">
+        <div class="placeholder-image" id="consulting-process">
+            Our Consulting<br>Process<br>Professional Results
+        </div>
+        <div class="image-label">consulting-process.jpg</div>
+        <button class="download-btn" onclick="downloadImage('consulting-process', 'consulting-process.jpg')">Download</button>
+    </div>
+
+    <script>
+        function downloadImage(elementId, filename) {
+            const element = document.getElementById(elementId);
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            canvas.width = 400;
+            canvas.height = 300;
+            
+            // Create gradient background
+            const gradient = ctx.createLinearGradient(0, 0, 400, 300);
+            gradient.addColorStop(0, '#2c5530');
+            gradient.addColorStop(1, '#4a7c59');
+            
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 400, 300);
+            
+            // Add text
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 18px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            
+            const text = element.textContent;
+            const lines = text.split('\n');
+            const lineHeight = 25;
+            const startY = 150 - (lines.length - 1) * lineHeight / 2;
+            
+            lines.forEach((line, index) => {
+                ctx.fillText(line.trim(), 200, startY + index * lineHeight);
+            });
+            
+            // Download
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+    </script>
+</body>
+</html>

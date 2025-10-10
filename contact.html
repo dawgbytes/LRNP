@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Lumber River Native Plants</title>
+    <meta name="description" content="Contact Lumber River Native Plants for quotes, consultations, and native plant inquiries. Located in Gibson, NC, serving the Midwest and Southeast.">
+    <link rel="canonical" href="https://lumberrivernativepllants.online/contact.html">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="Lumber River Native Plants Logo" class="logo">
+                <span class="logo-text">Lumber River Native Plants</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="plants.html" class="nav-link">Plant Catalog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="consulting.html" class="nav-link">Consulting</a>
+                </li>
+                <li class="nav-item">
+                    <a href="seeds.html" class="nav-link">Seeds</a>
+                </li>
+                <li class="nav-item">
+                    <a href="merchandise.html" class="nav-link">Merchandise</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content" style="text-align: center;">
+                <h1 class="hero-title">Contact Us</h1>
+                <p class="hero-subtitle">Get in touch for quotes, consultations, and expert native plant advice</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p><strong>(336) 601-8787</strong></p>
+                    <p>Call us for immediate assistance with plant selection and orders</p>
+                    <a href="tel:+13366018787" class="service-link">Call Now</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p><strong>sales@ncnativeplants.com</strong></p>
+                    <p>Send us your inquiries and we'll respond within 24 hours</p>
+                    <a href="mailto:sales@ncnativeplants.com" class="service-link">Send Email</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Our Nursery</h3>
+                    <p><strong>7000 Livingston Rd, Gibson, NC 28343</strong></p>
+                    <p>Come see our plants in person and get expert advice</p>
+                    <a href="https://maps.google.com/?q=7000+Livingston+Rd,+Gibson,+NC+28343" target="_blank" class="service-link">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you with a personalized response. Our team will provide expert advice tailored to your specific needs and location.</p>
+                    <p>All form submissions are formatted for easy import into QuickBooks Desktop 8.1, making it simple to track leads and manage customer relationships.</p>
+                </div>
+                <div class="form-container">
+                    <form id="contact-form" onsubmit="handleContactForm(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inquiry_type">Type of Inquiry *</label>
+                            <select id="inquiry_type" name="inquiry_type" required>
+                                <option value="">Select an option</option>
+                                <option value="Request for Quote">Request for Quote</option>
+                                <option value="Information Request">Information Request</option>
+                                <option value="Consultation Request">Consultation Request</option>
+                                <option value="Wetland Restoration Project">Wetland Restoration Project</option>
+                                <option value="Bulk Plant Order">Bulk Plant Order</option>
+                                <option value="Delivery Inquiry">Delivery Inquiry</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="plant_interest">Plant Interest</label>
+                            <select id="plant_interest" name="plant_interest">
+                                <option value="">Select plants of interest</option>
+                                <option value="Hibiscus (HIMO/HICO)">Hibiscus (HIMO/HICO)</option>
+                                <option value="Aquatic Plants">Aquatic Plants</option>
+                                <option value="Wetland Plants">Wetland Plants</option>
+                                <option value="Swamp Sunflower">Swamp Sunflower</option>
+                                <option value="Blueflag Iris">Blueflag Iris</option>
+                                <option value="Water Lily">Water Lily</option>
+                                <option value="Lizard's Tail">Lizard's Tail</option>
+                                <option value="Pickerel Weed">Pickerel Weed</option>
+                                <option value="Bullrush">Bullrush</option>
+                                <option value="Sedge">Sedge</option>
+                                <option value="Arrow Arum">Arrow Arum</option>
+                                <option value="Mixed Native Plants">Mixed Native Plants</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="project_details">Project Details</label>
+                            <textarea id="project_details" name="project_details" placeholder="Describe your project, location, size, and specific requirements..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget_range">Budget Range</label>
+                            <select id="budget_range" name="budget_range">
+                                <option value="">Select budget range</option>
+                                <option value="Under $500">Under $500</option>
+                                <option value="$500 - $1,000">$500 - $1,000</option>
+                                <option value="$1,000 - $2,500">$1,000 - $2,500</option>
+                                <option value="$2,500 - $5,000">$2,500 - $5,000</option>
+                                <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                                <option value="Over $10,000">Over $10,000</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="timeline">Project Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select timeline</option>
+                                <option value="Immediate">Immediate</option>
+                                <option value="Within 1 month">Within 1 month</option>
+                                <option value="1-3 months">1-3 months</option>
+                                <option value="3-6 months">3-6 months</option>
+                                <option value="6+ months">6+ months</option>
+                                <option value="Planning phase">Planning phase</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferred_contact">Preferred Contact Method</label>
+                            <select id="preferred_contact" name="preferred_contact">
+                                <option value="Email">Email</option>
+                                <option value="Phone">Phone</option>
+                                <option value="Either">Either Email or Phone</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Additional Message</label>
+                            <textarea id="message" name="message" placeholder="Any additional information, questions, or special requirements..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="newsletter_signup" name="newsletter_signup" value="yes">
+                                <label for="newsletter_signup">Subscribe to our newsletter for native plant tips and seasonal updates</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Hours -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Business Hours</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-week"></i>
+                    </div>
+                    <h3>Nursery Hours</h3>
+                    <p><strong>Monday - Friday:</strong> 8:00 AM - 5:00 PM</p>
+                    <p><strong>Saturday:</strong> 9:00 AM - 4:00 PM</p>
+                    <p><strong>Sunday:</strong> By Appointment Only</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Delivery Schedule</h3>
+                    <p><strong>Local Delivery:</strong> Tuesday & Thursday</p>
+                    <p><strong>Regional Delivery:</strong> Wednesday & Friday</p>
+                    <p><strong>Special Arrangements:</strong> Available upon request</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Consultation Hours</h3>
+                    <p><strong>On-Site Consultations:</strong> Monday - Friday</p>
+                    <p><strong>Phone Consultations:</strong> Daily during business hours</p>
+                    <p><strong>Emergency Consultations:</strong> Available by appointment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Owner Information -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/jep-whitlock.jpg" alt="Jep Whitlock, Owner of Lumber River Native Plants" class="about-img">
+                </div>
+                <div class="about-text">
+                    <h2>Meet Jep Whitlock</h2>
+                    <p><strong>Owner & Founder</strong></p>
+                    <p>With over two decades of experience in native plant cultivation and wetland restoration, Jep Whitlock founded Lumber River Native Plants to provide the highest quality native plants to the Midwest and Southeast regions.</p>
+                    <p>Jep's expertise includes aquatic plant selection, wetland ecosystem restoration, and native landscaping design. He works directly with customers to ensure they receive the perfect plants for their specific needs and growing conditions.</p>
+                    <p>Contact Jep directly for large projects, custom plant selections, or specialized consultation services.</p>
+                    <div class="cta-buttons">
+                        <a href="tel:+13366018787" class="btn btn-primary">
+                            <i class="fas fa-phone"></i> Call Jep Directly
+                        </a>
+                        <a href="mailto:sales@ncnativeplants.com" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Email Jep
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Lumber River Native Plants Logo" class="footer-logo-img">
+                        <h3>Lumber River Native Plants</h3>
+                    </div>
+                    <p>#1 Native Plant Nursery in the Midwest and Southeast</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/lumberrivernativeplants" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="plants.html">Plant Catalog</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-user"></i> Jep Whitlock, Owner</p>
+                        <p><i class="fas fa-phone"></i> (336) 601-8787</p>
+                        <p><i class="fas fa-envelope"></i> sales@ncnativeplants.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 7000 Livingston Rd, Gibson, NC 28343</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Specialties</h4>
+                    <ul>
+                        <li>Aquatic Plants</li>
+                        <li>Native Hibiscus</li>
+                        <li>Wetland Restoration</li>
+                        <li>Native Landscaping</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lumber River Native Plants. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

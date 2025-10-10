@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandise - Lumber River Native Plants</title>
+    <meta name="description" content="Shop branded merchandise from Lumber River Native Plants. T-shirts, mugs, tote bags, and print-on-demand art featuring native plant designs.">
+    <meta name="keywords" content="native plant merchandise, print on demand, native plant art, apparel, posters, gifts, Gibson NC">
+    <link rel="canonical" href="https://lumberrivernativepllants.online/merchandise.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Merchandise & Print-on-Demand Art">
+    <meta property="og:description" content="Shop native plant-themed apparel, mugs, totes, and prints. Support conservation.">
+    <meta property="og:url" content="https://lumberrivernativepllants.online/merchandise.html">
+    <meta property="og:image" content="https://ncnativeplants.com/images/merch-hero.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Merchandise & Print-on-Demand Art">
+    <meta name="twitter:description" content="Native plant-themed apparel and prints.">
+    <meta name="twitter:image" content="https://ncnativeplants.com/images/merch-hero.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="Lumber River Native Plants Logo" class="logo">
+                <span class="logo-text">Lumber River Native Plants</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="plants.html" class="nav-link">Plant Catalog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="consulting.html" class="nav-link">Consulting</a>
+                </li>
+                <li class="nav-item">
+                    <a href="seeds.html" class="nav-link">Seeds</a>
+                </li>
+                <li class="nav-item">
+                    <a href="merchandise.html" class="nav-link active">Merchandise</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Merchandise Header -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content" style="text-align: center;">
+                <h1 class="hero-title">Lumber River Native Plants Merchandise</h1>
+                <p class="hero-subtitle">Show your support for native plants with our exclusive branded merchandise</p>
+                <p class="hero-location">Quality products featuring our logo and native plant designs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-plants">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="merchandise-grid">
+                <!-- Logo T-Shirt -->
+                <div class="merchandise-item">
+                    <img src="images/merchandise/logo-tshirt.jpg" alt="Lumber River Native Plants Logo T-Shirt" class="merchandise-image">
+                    <div class="merchandise-info">
+                        <h3>Lumber River Logo T-Shirt</h3>
+                        <div class="merchandise-price" id="price-tshirt" data-price="24.99">$24.99</div>
+                        <p class="merchandise-description">Comfortable cotton t-shirt featuring the official Lumber River Native Plants logo. Available in multiple colors and sizes.</p>
+                        <div class="quantity-controls">
+                            <label for="quantity-tshirt">Quantity:</label>
+                            <div style="display: flex; align-items: center; gap: 10px; margin: 10px 0;">
+                                <button type="button" onclick="updateQuantity('tshirt', -1)" class="btn btn-outline" style="padding: 5px 10px; min-width: auto;">-</button>
+                                <input type="number" id="quantity-tshirt" class="quantity-input" value="1" min="1" max="99" style="width: 60px; text-align: center;">
+                                <button type="button" onclick="updateQuantity('tshirt', 1)" class="btn btn-outline" style="padding: 5px 10px; min-width: auto;">+</button>
+                            </div>
+                            <div style="font-weight: 600; color: #2d5016; margin: 10px 0;">
+                                Total: <span id="total-tshirt">$24.99</span>
+                            </div>
+                        </div>
+                        <button onclick="redirectToPOD('t-shirt')" class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Native Plant Mug -->
+                <div class="merchandise-item">
+                    <img src="images/merchandise/native-plant-mug.jpg" alt="Native Plant Design Mug" class="merchandise-image">
+                    <div class="merchandise-info">
+                        <h3>Native Plant Design Mug</h3>
+                        <div class="merchandise-price" id="price-mug" data-price="18.99">$18.99</div>
+                        <p class="merchandise-description">Beautiful ceramic mug featuring native plant illustrations including hibiscus, blueflag iris, and swamp sunflower designs.</p>
+                        <div class="quantity-controls">
+                            <label for="quantity-mug">Quantity:</label>
+                            <div style="display: flex; align-items: center; gap: 10px; margin: 10px 0;">
+                                <button type="button" onclick="updateQuantity('mug', -1)" class="btn btn-outline" style="padding: 5px 10px; min-width: auto;">-</button>
+                                <input type="number" id="quantity-mug" class="quantity-input" value="1" min="1" max="99" style="width: 60px; text-align: center;">
+                                <button type="button" onclick="updateQuantity('mug', 1)" class="btn btn-outline" style="padding: 5px 10px; min-width: auto;">+</button>
+                            </div>
+                            <div style="font-weight: 600; color: #2d5016; margin: 10px 0;">
+                                Total: <span id="total-mug">$18.99</span>
+                            </div>
+                        </div>
+                        <button onclick="redirectToPOD('mug')" class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Tote Bag -->
+                <div class="merchandise-item">
+                    <img src="images/merchandise/tote-bag.jpg" alt="Lumber River Native Plants Tote Bag" class="merchandise-image">
+                    <div class="merchandise-info">
+                        <h3>Native Plants Tote Bag</h3>
+                        <div class="merchandise-price" id="price-tote" data-price="16.99">$16.99</div>
+                        <p class="merchandise-description">Eco-friendly canvas tote bag perfect for carrying plants, gardening tools, or everyday use. Features native plant artwork.</p>
+                        <div class="quantity-controls">
+                            <label for="quantity-tote">Quantity:</label>
+                            <div style="display: flex; align-items: center; gap: 10px; margin: 10px 0;">
+                                <button type="button" onclick="updateQuantity('tote', -1)" class="btn btn-outline" style="padding: 5px 10px; min-width: auto;">-</button>
+                                <input type="number" id="quantity-tote" class="quantity-input" value="1" min="1" max="99" style="width: 60px; text-align: center;">
+                                <button type="button" onclick="updateQuantity('tote', 1)" class="btn btn-outline" style="padding: 5px 10px; min-width: auto;">+</button>
+                            </div>
+                            <div style="font-weight: 600; color: #2d5016; margin: 10px 0;">
+                                Total: <span id="total-tote">$16.99</span>
+                            </div>
+                        </div>
+                        <button onclick="redirectToPOD('tote-bag')" class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Plant Stickers -->
+                <div class="merchandise-item">
+                    <img src="images/merchandise/plant-stickers.jpg" alt="Native Plant Sticker Pack" class="merchandise-image">
+                    <div class="merchandise-info">
+                        <h3>Native Plant Sticker Pack</h3>
+                        <div class="merchandise-price" id="price-stickers" data-price="9.99">$9.99</div>
+                        <p class="merchandise-description">Set of waterproof stickers featuring beautiful native plant illustrations. Perfect for laptops, water bottles, and garden tools.</p>
+                        <div class="quantity-controls">
+                            <label for="quantity-stickers">Quantity:</label>
+                            <div style="display: flex; align-items: center; gap: 10px; margin: 10px 0;">
+                                <button type="button" onclick="updateQuantity('stickers', -1)" class="btn btn-outline" style="padding: 5px 10px; min-width: auto;">-</button>
+                                <input type="number" id="quantity-stickers" class="quantity-input" value="1" min="1" max="99" style="width: 60px; text-align: center;">
+                                <button type="button" onclick="updateQuantity('stickers', 1)" class="btn btn-outline" style="padding: 5px 10px; min-width: auto;">+</button>
+                            </div>
+                            <div style="font-weight: 600; color: #2d5016; margin: 10px 0;">
+                                Total: <span id="total-stickers">$9.99</span>
+                            </div>
+                        </div>
+                        <button onclick="redirectToPOD('sticker')" class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Waterproof Garden Poster -->
+                <div class="merchandise-item">
+                    <img src="images/merchandise/garden-poster.jpg" alt="Native Plant Garden Poster" class="merchandise-image">
+                    <div class="merchandise-info">
+                        <h3>Native Plant Garden Poster</h3>
+                        <div class="merchandise-price" id="price-poster" data-price="22.99">$22.99</div>
+                        <p class="merchandise-description">Educational poster featuring native plants of the Lumber River region. Perfect for garden sheds, greenhouses, or educational displays.</p>
+                        <div class="quantity-controls">
+                            <label for="quantity-poster">Quantity:</label>
+                            <div style="display: flex; align-items: center; gap: 10px; margin: 10px 0;">
+                                <button type="button" onclick="updateQuantity('poster', -1)" class="btn btn-outline" style="padding: 5px 10px; min-width: auto;">-</button>
+                                <input type="number" id="quantity-poster" class="quantity-input" value="1" min="1" max="99" style="width: 60px; text-align: center;">
+                                <button type="button" onclick="updateQuantity('poster', 1)" class="btn btn-outline" style="padding: 5px 10px; min-width: auto;">+</button>
+                            </div>
+                            <div style="font-weight: 600; color: #2d5016; margin: 10px 0;">
+                                Total: <span id="total-poster">$22.99</span>
+                            </div>
+                        </div>
+                        <button onclick="redirectToPOD('poster')" class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- "Native Plants Save the Planet" Hoodie -->
+                <div class="merchandise-item">
+                    <img src="images/merchandise/native-hoodie.jpg" alt="Native Plants Save the Planet Hoodie" class="merchandise-image">
+                    <div class="merchandise-info">
+                        <h3>"Native Plants Save the Planet" Hoodie</h3>
+                        <div class="merchandise-price" id="price-hoodie" data-price="39.99">$39.99</div>
+                        <p class="merchandise-description">Comfortable hoodie with the message "Native Plants Save the Planet" and native plant illustrations. Available in multiple colors.</p>
+                        <div class="quantity-controls">
+                            <label for="quantity-hoodie">Quantity:</label>
+                            <div style="display: flex; align-items: center; gap: 10px; margin: 10px 0;">
+                                <button type="button" onclick="updateQuantity('hoodie', -1)" class="btn btn-outline" style="padding: 5px 10px; min-width: auto;">-</button>
+                                <input type="number" id="quantity-hoodie" class="quantity-input" value="1" min="1" max="99" style="width: 60px; text-align: center;">
+                                <button type="button" onclick="updateQuantity('hoodie', 1)" class="btn btn-outline" style="padding: 5px 10px; min-width: auto;">+</button>
+                            </div>
+                            <div style="font-weight: 600; color: #2d5016; margin: 10px 0;">
+                                Total: <span id="total-hoodie">$39.99</span>
+                            </div>
+                        </div>
+                        <button onclick="redirectToPOD('t-shirt')" class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Design Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Custom Designs</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Custom Plant Designs</h3>
+                    <p>Request custom merchandise featuring your favorite native plants or specific designs for your organization.</p>
+                    <a href="contact.html" class="service-link">Request Custom Design</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Bulk Orders</h3>
+                    <p>Special pricing available for bulk orders of 10 or more items. Perfect for events, fundraisers, or gifts.</p>
+                    <a href="contact.html" class="service-link">Get Bulk Pricing</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Gift Sets</h3>
+                    <p>Create custom gift sets combining multiple products for the perfect native plant enthusiast gift.</p>
+                    <a href="contact.html" class="service-link">Create Gift Set</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profit Information -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Supporting Lumber River Native Plants</h2>
+                    <p>Every purchase from our merchandise line directly supports Lumber River Native Plants' mission to promote native plant conservation and wetland restoration in the Southeast.</p>
+                    <p><strong>Profit Allocation:</strong></p>
+                    <ul style="margin-left: 20px; margin-bottom: 20px;">
+                        <li>40% - Plant propagation and nursery expansion</li>
+                        <li>30% - Wetland restoration projects</li>
+                        <li>20% - Educational outreach programs</li>
+                        <li>10% - Conservation research and partnerships</li>
+                    </ul>
+                    <p>Your purchase helps us grow more native plants, restore wetland habitats, and educate the community about the importance of native plant conservation.</p>
+                    <a href="about.html" class="btn btn-outline">Learn More About Our Mission</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/merchandise/profit-allocation.jpg" alt="Profit allocation for Lumber River Native Plants" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Questions About Our Merchandise?</h2>
+                <p>Contact us for custom designs, bulk orders, or special requests</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="tel:+13366018787" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i> (336) 601-8787
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Lumber River Native Plants Logo" class="footer-logo-img">
+                        <h3>Lumber River Native Plants</h3>
+                    </div>
+                    <p>#1 Native Plant Nursery in the Midwest and Southeast</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/lumberrivernativeplants" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="plants.html">Plant Catalog</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-user"></i> Jep Whitlock, Owner</p>
+                        <p><i class="fas fa-phone"></i> (336) 601-8787</p>
+                        <p><i class="fas fa-envelope"></i> sales@ncnativeplants.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 7000 Livingston Rd, Gibson, NC 28343</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Specialties</h4>
+                    <ul>
+                        <li>Aquatic Plants</li>
+                        <li>Native Hibiscus</li>
+                        <li>Wetland Restoration</li>
+                        <li>Native Landscaping</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lumber River Native Plants. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

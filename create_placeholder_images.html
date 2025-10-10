@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Placeholder Images</title>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="300" style="display: none;"></canvas>
+    <script>
+        // Function to create placeholder images
+        function createPlaceholderImage(text, filename, width = 400, height = 300) {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Set canvas size
+            canvas.width = width;
+            canvas.height = height;
+            
+            // Background
+            ctx.fillStyle = '#f0f0f0';
+            ctx.fillRect(0, 0, width, height);
+            
+            // Border
+            ctx.strokeStyle = '#ccc';
+            ctx.lineWidth = 2;
+            ctx.strokeRect(0, 0, width, height);
+            
+            // Text
+            ctx.fillStyle = '#666';
+            ctx.font = '16px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(text, width / 2, height / 2);
+            
+            // Download
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+        
+        // Create all placeholder images
+        const images = [
+            { text: 'Logo', filename: 'logo.png', width: 200, height: 200 },
+            { text: 'Hero Nursery', filename: 'hero-nursery.jpg', width: 500, height: 300 },
+            { text: 'About Preview', filename: 'about-preview.jpg', width: 400, height: 300 },
+            { text: 'About Nursery', filename: 'about-nursery.jpg', width: 400, height: 300 },
+            { text: 'Jep Whitlock Owner', filename: 'jep-whitlock-owner.jpg', width: 300, height: 400 },
+            { text: 'Jep Whitlock', filename: 'jep-whitlock.jpg', width: 300, height: 400 },
+            { text: 'Certifications', filename: 'certifications-partnerships.jpg', width: 400, height: 300 },
+            { text: 'Service Areas Map', filename: 'service-areas-map.jpg', width: 400, height: 300 },
+            { text: 'Project Process', filename: 'project-process.jpg', width: 400, height: 300 },
+            { text: 'Hibiscus HIMO', filename: 'plants/hibiscus-himo.jpg', width: 300, height: 300 },
+            { text: 'Hibiscus HICO', filename: 'plants/hibiscus-hico.jpg', width: 300, height: 300 },
+            { text: 'Swamp Sunflower', filename: 'plants/swamp-sunflower.jpg', width: 300, height: 300 },
+            { text: 'Blueflag Iris', filename: 'plants/blueflag-iris.jpg', width: 300, height: 300 },
+            { text: 'Water Lily', filename: 'plants/water-lily.jpg', width: 300, height: 300 },
+            { text: 'Lizards Tail', filename: 'plants/lizards-tail.jpg', width: 300, height: 300 },
+            { text: 'Pickerel Weed', filename: 'plants/pickerel-weed.jpg', width: 300, height: 300 },
+            { text: 'Bullrush', filename: 'plants/bullrush.jpg', width: 300, height: 300 },
+            { text: 'Arrow Arum', filename: 'plants/arrow-arum.jpg', width: 300, height: 300 },
+            { text: 'Sedge', filename: 'plants/sedge.jpg', width: 300, height: 300 },
+            { text: 'Logo T-Shirt', filename: 'merchandise/logo-tshirt.jpg', width: 300, height: 300 },
+            { text: 'Native Plant Mug', filename: 'merchandise/native-plant-mug.jpg', width: 300, height: 300 },
+            { text: 'Tote Bag', filename: 'merchandise/tote-bag.jpg', width: 300, height: 300 },
+            { text: 'Plant Stickers', filename: 'merchandise/plant-stickers.jpg', width: 300, height: 300 },
+            { text: 'Garden Poster', filename: 'merchandise/garden-poster.jpg', width: 300, height: 300 },
+            { text: 'Native Hoodie', filename: 'merchandise/native-hoodie.jpg', width: 300, height: 300 },
+            { text: 'Profit Allocation', filename: 'merchandise/profit-allocation.jpg', width: 400, height: 300 }
+        ];
+        
+        // Create images one by one with delay
+        let index = 0;
+        function createNext() {
+            if (index < images.length) {
+                const img = images[index];
+                createPlaceholderImage(img.text, img.filename, img.width, img.height);
+                index++;
+                setTimeout(createNext, 500);
+            }
+        }
+        
+        // Start creating images
+        createNext();
+    </script>
+</body>
+</html>

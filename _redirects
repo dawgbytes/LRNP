@@ -1,0 +1,16 @@
+# Netlify redirects file
+/*    /index.html   200
+
+# Contact form handling
+/contact-form    https://formspree.io/f/xpwgqyqw    301
+
+# SEO redirects
+/plants    /plants.html    301
+/about    /about.html    301
+/services    /services.html    301
+/merchandise    /merchandise.html    301
+/contact    /contact.html    301
+
+# API endpoints for form handling
+/api/contact    /contact-form    301
+/api/newsletter    /newsletter-signup    301

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Native Plant Catalog - Lumber River Native Plants</title>
+    <meta name="description" content="Browse our comprehensive catalog of native plants including aquatic species, hibiscus varieties, and wetland plants. Specializing in plants native to the Lumber River region.">
+    <link rel="canonical" href="https://lumberrivernativepllants.online/plants.html">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="Lumber River Native Plants Logo" class="logo">
+                <span class="logo-text">Lumber River Native Plants</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="plants.html" class="nav-link active">Plant Catalog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="consulting.html" class="nav-link">Consulting</a>
+                </li>
+                <li class="nav-item">
+                    <a href="seeds.html" class="nav-link">Seeds</a>
+                </li>
+                <li class="nav-item">
+                    <a href="merchandise.html" class="nav-link">Merchandise</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Plant Catalog Header -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content" style="text-align: center;">
+                <h1 class="hero-title">Native Plant Catalog</h1>
+                <p class="hero-subtitle">Discover our extensive collection of native plants, specially curated for the Lumber River region</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plant Filters -->
+    <section class="plant-catalog">
+        <div class="container">
+            <div class="plant-filters">
+                <button class="filter-btn active" onclick="filterPlants('all')">All Plants</button>
+                <button class="filter-btn" onclick="filterPlants('aquatic')">Aquatic Plants</button>
+                <button class="filter-btn" onclick="filterPlants('hibiscus')">Hibiscus</button>
+                <button class="filter-btn" onclick="filterPlants('wetland')">Wetland Plants</button>
+                <button class="filter-btn" onclick="filterPlants('emergent')">Emergent Plants</button>
+            </div>
+
+            <!-- Plant Details Grid -->
+            <div class="plant-details">
+                <!-- Hibiscus HIMO -->
+                <div class="plant-detail-card" data-category="hibiscus">
+                    <img src="images/plants/hibiscus-himo.jpg" alt="Hibiscus HIMO" class="plant-detail-image">
+                    <div class="plant-detail-info">
+                        <h3 id="hibiscus">Hibiscus HIMO</h3>
+                        <p class="plant-scientific-name">Hibiscus moscheutos</p>
+                        <p class="plant-description">A stunning native hibiscus variety with large, showy flowers perfect for wetland gardens and pond edges. Features deep pink to white blooms that attract hummingbirds and butterflies.</p>
+                        <div class="plant-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Height:</span>
+                                <span class="spec-value">4-6 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Spread:</span>
+                                <span class="spec-value">3-4 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Bloom Time:</span>
+                                <span class="spec-value">July - September</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Sun Exposure:</span>
+                                <span class="spec-value">Full Sun</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Water Needs:</span>
+                                <span class="spec-value">Wet to Moist</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Zone:</span>
+                                <span class="spec-value">5-9</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                    </div>
+                </div>
+
+                <!-- Hibiscus HICO -->
+                <div class="plant-detail-card" data-category="hibiscus">
+                    <img src="images/plants/hibiscus-hico.jpg" alt="Hibiscus HICO" class="plant-detail-image">
+                    <div class="plant-detail-info">
+                        <h3>Hibiscus HICO</h3>
+                        <p class="plant-scientific-name">Hibiscus coccineus</p>
+                        <p class="plant-description">A spectacular native hibiscus with brilliant red flowers and distinctive palmate leaves. Perfect for adding dramatic color to water gardens and wetland areas.</p>
+                        <div class="plant-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Height:</span>
+                                <span class="spec-value">6-8 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Spread:</span>
+                                <span class="spec-value">2-3 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Bloom Time:</span>
+                                <span class="spec-value">July - September</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Sun Exposure:</span>
+                                <span class="spec-value">Full Sun</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Water Needs:</span>
+                                <span class="spec-value">Wet to Moist</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Zone:</span>
+                                <span class="spec-value">6-9</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                    </div>
+                </div>
+
+                <!-- Swamp Sunflower -->
+                <div class="plant-detail-card" data-category="wetland">
+                    <img src="images/plants/swamp-sunflower.jpg" alt="Swamp Sunflower" class="plant-detail-image">
+                    <div class="plant-detail-info">
+                        <h3 id="swamp-sunflower">Swamp Sunflower</h3>
+                        <p class="plant-scientific-name">Helianthus angustifolius</p>
+                        <p class="plant-description">Bright yellow blooms that create stunning displays in late summer and fall. Excellent for wetland restoration and pollinator gardens, attracting bees and butterflies.</p>
+                        <div class="plant-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Height:</span>
+                                <span class="spec-value">5-8 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Spread:</span>
+                                <span class="spec-value">2-4 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Bloom Time:</span>
+                                <span class="spec-value">September - November</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Sun Exposure:</span>
+                                <span class="spec-value">Full Sun to Partial Shade</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Water Needs:</span>
+                                <span class="spec-value">Wet to Moist</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Zone:</span>
+                                <span class="spec-value">6-9</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                    </div>
+                </div>
+
+                <!-- Blueflag Iris -->
+                <div class="plant-detail-card" data-category="aquatic emergent">
+                    <img src="images/plants/blueflag-iris.jpg" alt="Blueflag Iris" class="plant-detail-image">
+                    <div class="plant-detail-info">
+                        <h3 id="blueflag-iris">Blueflag Iris</h3>
+                        <p class="plant-scientific-name">Iris versicolor</p>
+                        <p class="plant-description">Stunning blue-purple flowers that bloom in spring and early summer. Perfect for water gardens, pond edges, and wetland restoration projects.</p>
+                        <div class="plant-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Height:</span>
+                                <span class="spec-value">2-3 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Spread:</span>
+                                <span class="spec-value">1-2 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Bloom Time:</span>
+                                <span class="spec-value">May - June</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Sun Exposure:</span>
+                                <span class="spec-value">Full Sun to Partial Shade</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Water Needs:</span>
+                                <span class="spec-value">Wet to Moist</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Zone:</span>
+                                <span class="spec-value">3-9</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                    </div>
+                </div>
+
+                <!-- Water Lily -->
+                <div class="plant-detail-card" data-category="aquatic">
+                    <img src="images/plants/water-lily.jpg" alt="Native Water Lily" class="plant-detail-image">
+                    <div class="plant-detail-info">
+                        <h3 id="water-lily">Native Water Lily</h3>
+                        <p class="plant-scientific-name">Nymphaea odorata</p>
+                        <p class="plant-description">Beautiful floating aquatic plant with fragrant white flowers. Specially adapted for bodies of water around Saint Andrews, NC region. Provides habitat for fish and aquatic wildlife.</p>
+                        <div class="plant-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Leaf Spread:</span>
+                                <span class="spec-value">2-4 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Flower Size:</span>
+                                <span class="spec-value">4-6 inches</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Bloom Time:</span>
+                                <span class="spec-value">June - September</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Sun Exposure:</span>
+                                <span class="spec-value">Full Sun</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Water Depth:</span>
+                                <span class="spec-value">1-4 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Zone:</span>
+                                <span class="spec-value">4-10</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                    </div>
+                </div>
+
+                <!-- Lizard's Tail -->
+                <div class="plant-detail-card" data-category="aquatic emergent">
+                    <img src="images/plants/lizards-tail.jpg" alt="Lizard's Tail" class="plant-detail-image">
+                    <div class="plant-detail-info">
+                        <h3>Lizard's Tail</h3>
+                        <p class="plant-scientific-name">Saururus cernuus</p>
+                        <p class="plant-description">Unique aquatic plant with distinctive white flower spikes that resemble a lizard's tail. Excellent for pond edges and shallow water areas.</p>
+                        <div class="plant-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Height:</span>
+                                <span class="spec-value">2-4 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Spread:</span>
+                                <span class="spec-value">1-2 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Bloom Time:</span>
+                                <span class="spec-value">June - August</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Sun Exposure:</span>
+                                <span class="spec-value">Full Sun to Partial Shade</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Water Needs:</span>
+                                <span class="spec-value">Wet to Moist</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Zone:</span>
+                                <span class="spec-value">4-9</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                    </div>
+                </div>
+
+                <!-- Pickerel Weed -->
+                <div class="plant-detail-card" data-category="aquatic emergent">
+                    <img src="images/plants/pickerel-weed.jpg" alt="Pickerel Weed" class="plant-detail-image">
+                    <div class="plant-detail-info">
+                        <h3>Pickerel Weed</h3>
+                        <p class="plant-scientific-name">Pontederia cordata</p>
+                        <p class="plant-description">Beautiful aquatic plant with striking blue-purple flower spikes. Excellent for water gardens and provides important habitat for wildlife.</p>
+                        <div class="plant-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Height:</span>
+                                <span class="spec-value">2-4 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Spread:</span>
+                                <span class="spec-value">1-2 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Bloom Time:</span>
+                                <span class="spec-value">June - September</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Sun Exposure:</span>
+                                <span class="spec-value">Full Sun to Partial Shade</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Water Needs:</span>
+                                <span class="spec-value">Wet to Moist</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Zone:</span>
+                                <span class="spec-value">3-10</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                    </div>
+                </div>
+
+                <!-- Bullrush -->
+                <div class="plant-detail-card" data-category="aquatic emergent">
+                    <img src="images/plants/bullrush.jpg" alt="Bullrush" class="plant-detail-image">
+                    <div class="plant-detail-info">
+                        <h3>Bullrush</h3>
+                        <p class="plant-scientific-name">Scirpus americanus</p>
+                        <p class="plant-description">Tall, sturdy emergent plant perfect for wetland restoration and water quality improvement. Provides excellent wildlife habitat and erosion control.</p>
+                        <div class="plant-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Height:</span>
+                                <span class="spec-value">3-6 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Spread:</span>
+                                <span class="spec-value">2-3 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Bloom Time:</span>
+                                <span class="spec-value">June - August</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Sun Exposure:</span>
+                                <span class="spec-value">Full Sun</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Water Needs:</span>
+                                <span class="spec-value">Wet to Moist</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Zone:</span>
+                                <span class="spec-value">3-9</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                    </div>
+                </div>
+
+                <!-- Arrow Arum -->
+                <div class="plant-detail-card" data-category="aquatic emergent">
+                    <img src="images/plants/arrow-arum.jpg" alt="Arrow Arum" class="plant-detail-image">
+                    <div class="plant-detail-info">
+                        <h3>Arrow Arum</h3>
+                        <p class="plant-scientific-name">Peltandra virginica</p>
+                        <p class="plant-description">Distinctive aquatic plant with arrow-shaped leaves and white flower spathes. Excellent for shallow water areas and pond edges.</p>
+                        <div class="plant-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Height:</span>
+                                <span class="spec-value">2-3 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Spread:</span>
+                                <span class="spec-value">1-2 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Bloom Time:</span>
+                                <span class="spec-value">May - July</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Sun Exposure:</span>
+                                <span class="spec-value">Full Sun to Partial Shade</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Water Needs:</span>
+                                <span class="spec-value">Wet to Moist</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Zone:</span>
+                                <span class="spec-value">5-9</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                    </div>
+                </div>
+
+                <!-- Sedge -->
+                <div class="plant-detail-card" data-category="aquatic emergent">
+                    <img src="images/plants/sedge.jpg" alt="Native Sedge" class="plant-detail-image">
+                    <div class="plant-detail-info">
+                        <h3>Native Sedge</h3>
+                        <p class="plant-scientific-name">Carex spp.</p>
+                        <p class="plant-description">Versatile grass-like plants perfect for wetland restoration, erosion control, and wildlife habitat. Various species available for different conditions.</p>
+                        <div class="plant-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Height:</span>
+                                <span class="spec-value">1-4 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Spread:</span>
+                                <span class="spec-value">1-3 feet</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Bloom Time:</span>
+                                <span class="spec-value">April - June</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Sun Exposure:</span>
+                                <span class="spec-value">Full Sun to Shade</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Water Needs:</span>
+                                <span class="spec-value">Wet to Moist</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Zone:</span>
+                                <span class="spec-value">3-9</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Help Choosing the Right Plants?</h2>
+                <p>Our expert team can help you select the perfect native plants for your project</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Get Consultation</a>
+                    <a href="tel:+13366018787" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i> (336) 601-8787
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Lumber River Native Plants Logo" class="footer-logo-img">
+                        <h3>Lumber River Native Plants</h3>
+                    </div>
+                    <p>#1 Native Plant Nursery in the Midwest and Southeast</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/lumberrivernativeplants" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="plants.html">Plant Catalog</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-user"></i> Jep Whitlock, Owner</p>
+                        <p><i class="fas fa-phone"></i> (336) 601-8787</p>
+                        <p><i class="fas fa-envelope"></i> sales@ncnativeplants.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 7000 Livingston Rd, Gibson, NC 28343</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Specialties</h4>
+                    <ul>
+                        <li>Aquatic Plants</li>
+                        <li>Native Hibiscus</li>
+                        <li>Wetland Restoration</li>
+                        <li>Native Landscaping</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lumber River Native Plants. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
