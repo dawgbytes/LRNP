@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#e8f5e9"/>
+      <stop offset="1" stop-color="#c8e6c9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <g fill="#2e7d32" font-family="system-ui,Arial" font-size="64" text-anchor="middle">
+    <text x="800" y="430">Lumber River Native Plants</text>
+    <text x="800" y="510" font-size="28">Native lilies • wetland & riparian species • SE U.S.</text>
+  </g>
+</svg>
