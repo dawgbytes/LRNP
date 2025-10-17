@@ -1,0 +1,9 @@
+LRNP/
+  index.html
+  /css/
+    site.css
+  /public/
+    img/
+      placeholder.svg
+  netlify.toml
+  _redirects
