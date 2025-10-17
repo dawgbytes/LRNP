@@ -1,0 +1,128 @@
+# QuickBooks 8.1 Integration Guide for Lumber River Native Plants
+
+## Overview
+This guide provides step-by-step instructions for integrating Lumber River Native Plants' customer data and sales information with QuickBooks Desktop 8.1.
+
+## Customer Data Import Process
+
+### Step 1: Prepare Customer Data
+1. Export customer information from website contact forms
+2. Format data to match QuickBooks customer fields:
+   - Customer Name
+   - Company Name (if applicable)
+   - Email Address
+   - Phone Number
+   - Billing Address
+   - Shipping Address
+   - Customer Type (Retail/Commercial/Restoration)
+
+### Step 2: Import Customers into QuickBooks
+1. Open QuickBooks Desktop 8.1
+2. Go to File > Utilities > Import > Excel Files
+3. Select your customer data file
+4. Map fields to QuickBooks customer fields
+5. Review and import customers
+
+### Step 3: Set Up Product/Service Items
+Create the following items in QuickBooks:
+- Hibiscus HIMO - $25.00
+- Hibiscus HICO - $30.00
+- Swamp Sunflower - $15.00
+- Blueflag Iris - $20.00
+- Water Lily - $35.00
+- Lizard's Tail - $18.00
+- Pickerel Weed - $22.00
+- Bullrush - $16.00
+- Sedge - $14.00
+- Arrow Arum - $19.00
+- Consultation Services - $75.00/hour
+- Delivery Services - $50.00
+- Installation Services - $100.00
+
+### Step 4: Sales Process Integration
+1. Create estimates for customer inquiries
+2. Convert estimates to invoices when orders are confirmed
+3. Track payment status
+4. Generate reports for sales analysis
+
+## Contact Form Data Processing
+
+### Daily Process
+1. Check email for new contact form submissions
+2. Create new customer records in QuickBooks
+3. Create estimate based on inquiry type
+4. Follow up with customer within 24 hours
+5. Update customer status in tracking system
+
+### Weekly Process
+1. Review all pending estimates
+2. Follow up on outstanding quotes
+3. Update customer records with new information
+4. Generate weekly sales report
+
+### Monthly Process
+1. Analyze sales performance
+2. Review customer acquisition trends
+3. Update pricing based on cost analysis
+4. Plan inventory needs for next month
+
+## Reporting and Analysis
+
+### Key Reports to Generate
+1. **Sales Summary by Customer Type**
+2. **Monthly Revenue Trends**
+3. **Customer Acquisition Report**
+4. **Product Performance Analysis**
+5. **Aging Receivables Report**
+
+### Custom Fields for Tracking
+- Lead Source (Website, Facebook, Referral, etc.)
+- Plant Interest Category
+- Project Type (Residential, Commercial, Restoration)
+- Follow-up Date
+- Customer Status (Prospect, Active, Inactive)
+
+## Best Practices
+
+### Data Entry Standards
+- Use consistent naming conventions
+- Always include complete contact information
+- Add detailed notes for special requirements
+- Set up automatic follow-up reminders
+
+### Backup Procedures
+- Backup QuickBooks data daily
+- Export customer data weekly
+- Maintain separate backup of contact form data
+- Test restore procedures monthly
+
+### Security Measures
+- Use strong passwords for QuickBooks access
+- Limit user access to necessary functions only
+- Regular security updates
+- Secure backup storage
+
+## Troubleshooting Common Issues
+
+### Import Errors
+- Check data format consistency
+- Verify field mappings
+- Ensure no duplicate customer names
+- Validate email addresses and phone numbers
+
+### Performance Issues
+- Regular data cleanup
+- Archive old transactions
+- Optimize database regularly
+- Monitor disk space
+
+## Contact Information
+For technical support with QuickBooks integration:
+- Jep Whitlock: (336) 601-8787
+- Email: sales@ncnativeplants.com
+- Business Hours: Monday-Friday 8:00 AM - 5:00 PM
+
+## Version History
+- Version 1.0: Initial integration guide created
+- Updated: January 8, 2025
+- Next Review: March 8, 2025

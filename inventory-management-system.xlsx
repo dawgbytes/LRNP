@@ -1,0 +1,11 @@
+Plant ID,Plant Name,Scientific Name,Category,Current Stock,Minimum Stock,Reorder Level,Unit Cost,Selling Price,Profit Margin,Last Restocked,Next Restock Date,Supplier,Notes
+PLT001,Hibiscus HIMO,Hibiscus moscheutos,Hibiscus,45,10,15,$12.50,$25.00,100%,2025-01-01,2025-02-01,Local Propagator,Popular variety
+PLT002,Hibiscus HICO,Hibiscus coccineus,Hibiscus,32,8,12,$15.00,$30.00,100%,2025-01-01,2025-02-01,Local Propagator,Fast growing
+PLT003,Swamp Sunflower,Helianthus angustifolius,Wetland,78,20,25,$7.50,$15.00,100%,2024-12-15,2025-01-15,Local Propagator,High demand
+PLT004,Blueflag Iris,Iris versicolor,Aquatic,56,15,20,$10.00,$20.00,100%,2024-12-20,2025-01-20,Local Propagator,Spring bloomer
+PLT005,Water Lily,Nymphaea odorata,Aquatic,23,5,8,$17.50,$35.00,100%,2024-12-10,2025-01-10,Local Propagator,Specialty item
+PLT006,Lizard's Tail,Saururus cernuus,Aquatic,34,10,15,$9.00,$18.00,100%,2024-12-25,2025-01-25,Local Propagator,Unique foliage
+PLT007,Pickerel Weed,Pontederia cordata,Aquatic,41,12,18,$11.00,$22.00,100%,2024-12-18,2025-01-18,Local Propagator,Popular aquatic
+PLT008,Bullrush,Scirpus americanus,Emergent,67,20,30,$8.00,$16.00,100%,2024-12-12,2025-01-12,Local Propagator,Restoration favorite
+PLT009,Sedge,Carex spp.,Emergent,89,25,35,$7.00,$14.00,100%,2024-12-22,2025-01-22,Local Propagator,Multiple varieties
+PLT010,Arrow Arum,Peltandra virginica,Emergent,28,8,12,$9.50,$19.00,100%,2024-12-28,2025-01-28,Local Propagator,Shade tolerant
